@@ -1,0 +1,40 @@
+### User Tests
+# Create a User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+
+### Get All Users
+GET http://localhost:3000/users
+
+### Get User by ID
+GET http://localhost:3000/users/1
+
+
+### Delete a User
+DELETE http://localhost:3000/users/1
+
+
+### Task Tests
+# Create a Task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "Task 1",
+  "description": "First task description",
+  "userId": "1"
+}
+
+### Get All Tasks
+GET http://localhost:3000/tasks
+
+Task by ID
+GET http://localhost:3000/tasks/1
+
+### Delete a Task
+DELETE http://localhost:3000/tasks/1
