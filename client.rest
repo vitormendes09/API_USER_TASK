@@ -4,19 +4,19 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "john.doe@example.com"
+  "name": "Vitor",
+  "email": "vitor.teste@example.com"
 }
 
 ### Get All Users
 GET http://localhost:3000/users
 
 ### Get User by ID
-GET http://localhost:3000/users/1
+GET http://localhost:3000/users/1737861806643
 
 
 ### Delete a User
-DELETE http://localhost:3000/users/1
+DELETE http://localhost:3000/users/1737861806643
 
 
 ### Task Tests
@@ -27,7 +27,7 @@ Content-Type: application/json
 {
   "title": "Task 1",
   "description": "First task description",
-  "userId": "1"
+  "userId": "1737861806643"
 }
 
 ### Get All Tasks
