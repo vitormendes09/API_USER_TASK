@@ -5,18 +5,18 @@ Content-Type: application/json
 
 {
   "name": "Vitor",
-  "email": "vitor.teste@example.com"
+  "email": "Vitor.teste@gmail.com"
 }
 
 ### Get All Users
 GET http://localhost:3000/users
 
 ### Get User by ID
-GET http://localhost:3000/users/1737861806643
+GET http://localhost:3000/users/1737933479882
 
 
 ### Delete a User
-DELETE http://localhost:3000/users/1737861806643
+DELETE http://localhost:3000/users/1737925153428
 
 
 ### Task Tests
@@ -25,16 +25,20 @@ POST http://localhost:3000/tasks
 Content-Type: application/json
 
 {
-  "title": "Task 1",
-  "description": "First task description",
-  "userId": "1737861806643"
+  "title": "Prova de Matemática",
+  "description": "Prova de Matemática data talt tla tal",
+  "user": {
+    "id": "1737933479882"
+  }
 }
+
 
 ### Get All Tasks
 GET http://localhost:3000/tasks
 
+### Get One Task by ID
 Task by ID
-GET http://localhost:3000/tasks/1
+GET http://localhost:3000/tasks/1737933573350
 
 ### Delete a Task
-DELETE http://localhost:3000/tasks/1
+DELETE http://localhost:3000/tasks/1737933573350
